@@ -71,7 +71,7 @@ The [Berkeley parser][berkeley]:
 
     make berkeley
 
-The [CCG][ccg]:
+The [CCG][candc]:
 
     make candc
 
@@ -221,7 +221,7 @@ data.
 #### Licensing Restrictions and You ####
 
 During the first invocation of the makefile you will be prompted to manually
-download the resources necessary to run [C&C][ccg] and [Enju][enju] since
+download the resources necessary to run [C&C][candc] and [Enju][enju] since
 their licenses don't allow re-distribution without explicitly agreeing with
 their license agreement.
 
@@ -504,7 +504,7 @@ requirements.
 [bionlp09]: http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/SharedTask/ "BioNLP'09 Shared Task Homepage"
 [carmack]: http://en.wikipedia.org/wiki/John_D._Carmack "John D. Carmack Entry on Wikipedia"
 [carmack_blog]: http://www.armadilloaerospace.com/n.x/johnc/recent%20updates/archive?news_id=295 "Carmack on Mobile Java Development"
-[ccg]: http://svn.ask.it.usyd.edu.au/trac/candc/wiki "Curran and Clark CCG Parser Homepage"
+[candc]: http://svn.ask.it.usyd.edu.au/trac/candc/wiki "Curran and Clark CCG Parser Homepage"
 [charniak]: https://bitbucket.org/bllip/bllip-parser/ "Charniak-Johnson Parser Repository"
 [cj]: http://www.cs.brown.edu/~ec/ "Charniak-Johnson Parser Homepage"
 [clang]: http://clang.llvm.org/ "Clang Homepage"
