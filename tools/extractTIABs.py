@@ -172,15 +172,17 @@ def process(fn):
                         continue
 
                     t = ""
-                    if "Label" in at.attrib:
+                    if "Label" in at.attrib and at.attrib['Label'] != 'UNLABELLED':
                         t = at.attrib["Label"] + ":"
                     else:
-                        print >> sys.stderr, "Warning: missing 'Label' for multiple <AbstractText>s in %s" % PMID.text
+                        print >> sys.stderr, "Warning: missing 'Label' or label assigned as 'UNLABELLED' for multiple <AbstractText>s in %s" % PMID.text
 
                     if at.text is None or at.text.strip() == "":
                         print >> sys.stderr, "NOTE: empty text for one of multiple <AbstractText>s in %s" % PMID.text
                     else:
-                        if options.single_line_abstract:
+                        if not t:
+                            t = at.text
+                        elif options.single_line_abstract:
                             t += " " + at.text
                         else:
                             t += "\n"+ at.text
